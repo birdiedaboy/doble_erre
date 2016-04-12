@@ -61,8 +61,7 @@ nav{
 }
 nav ul li img{
     margin: 5% 0% 5% 0%;
-    height: 30%;
-    width: auto;
+    width: 100%;
 }
 header{
     background-color: #FECC40;
@@ -116,7 +115,8 @@ main h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FECC40;
+	background-image: 
+		linear-gradient(260deg, rgba(254,204,64,1.00) 0%, rgba(29,139,203,1.00) 100%);
     font-size: 2em;
     padding: 2% 0% 2% 0;
     margin:  0% 0 5% 0;
@@ -196,7 +196,25 @@ aside h2{
     display: flex;
     justify-content: center;
 }
+aside p{
+    display: flex;
+}
+aside p small{
+    
+    flex: 1;
 
+}
+.infra{
+    flex: 1;
+    margin: 0 0 0 10%;
+}
+aside p small:last-child{
+        text-align: right;
+    margin: 0 10% 0 0;
+}
+aside img{
+    width: 100%;
+}
 
 form{
     background-color: #1D8BCB;
@@ -256,4 +274,20 @@ form span p{
 form span iframe{
     order: 1;
     flex: 2;
+}
+
+footer{
+    display: flex;
+}
+footer p{
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    flex: 2;
+}
+
+footer img {
+    height: 5%;
+    width: auto:
+    flex: 1;
 }

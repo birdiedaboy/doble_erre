@@ -7,27 +7,23 @@ p{
 	width: 100%;
 	height: 100%;
     box-sizing: border-box;
-    background-color: rgb(10,10,10);
-    padding: 10% 0 10% 0;
-}
-
-.centro{
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
+    background-color: black;
+    padding: 5% 0 5% 0;    
+    display: flex;
+    justify-content: center;
     
 }
 
+
 img.centro{
 	border-radius: 20px;
-	width: auto;
-	height: 35vw;
-	margin-bottom: %;
-	/*border: solid 1px white;*/
-
+	height: 15vw;
+    display: flex;
+	
 }
 
 body{
+ 
 	margin: 0px;
     padding: 0px;
     font-family: 'helvetica', sans-serif;
@@ -41,12 +37,12 @@ h1{
     font-family: helvetica, sans-serif;
 }
 h3{
-	font-size: 8vw;
+	font-size: 4vw;
 	color: white;
-    text-align: right;
+    text-align: center;
     box-sizing: border-box;
-    margin: 0 0 10% 0;
-    padding: 5vw 4vw 4vw 0;
+    margin: 0 0 0% 0;
+    padding: 2% 0% 2% 0;
     font-family: 'helvetica', sans-serif;
     background-color: rgba(34,137,197, 1.0);
     
@@ -65,6 +61,7 @@ h2{
 	height: 100%;
     box-sizing: border-box;
     padding: 0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
     background-color: rgba(114, 115, 117, 0.4);
     padding-bottom: 5vw;
     
@@ -104,6 +101,7 @@ p.nuevo small{
     background-color: rgba(217,218,219,1.0);
     box-sizing: border-box;
     padding: 0% 0 10% 0;
+
 }
 
 .biodiesel img{
@@ -117,8 +115,11 @@ p.nuevo small{
 
 .chiquito{
 	/* text-align: center; */
-    width: 90%;
-    margin: 5% 5% 0 5%;	
+    flex-flow: column;
+    margin: 5% 0 0 0;
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .bio{
     display: inline-table;
@@ -133,7 +134,8 @@ p.nuevo small{
 
 .micha{
     margin: 5% 0vw 5% 14.5%;;
-    display: inline-table;
+    display: flex;
+    flex-flow: column;
     width: 28%;
     font-size: 2.5vw;
     text-align: center;

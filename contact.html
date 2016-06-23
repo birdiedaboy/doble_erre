@@ -37,12 +37,12 @@
 
 	<header id="navtop">
 		<a href="index.html" class="logo fleft">
-			<img src="img/logo_rr_3.png" alt="Doble Erre Continentales">
+			<img src="img/logo_rr_3.png" alt="Designa Studio">
 		</a>
 		
 		<nav class="fright">
 			<ul>
-				<li><a href="index.html" class="navactive">Quiénes Somos</a></li>
+				<li><a href="index.html">Quiénes Somos</a></li>
 			
 			</ul>
              
@@ -63,87 +63,99 @@
 			</ul>
 			<ul>
 				
-				<li><a href="contact.html">Contacto</a></li>
+				<li><a href="contact.html" class="navactive">Contacto</a></li>
 			</ul>
 		</nav>
 	</header>
 
 
-<div class="home-page main">
-	<section class="grid-wrap" >
+	<div class="contact-page main grid-wrap">
+
 		<header class="grid col-full">
 			<hr>
 			
-			
 		</header>
-		
-		<div class="grid col-one-half mq2-col-full">
-			<h1>BIENVENIDOS</h1>
 
-			<p>
-                Doble Erre Continentales S.A. de C.V., es una empresa mexicana que a raíz de la reforma energética encuentra un área de oportunidad para abastecer combustibles de la más alta calidad y amigables con el medio ambiente como es el BIODIESEL.
-			</p>
-			<p>
-                Contamos con todos los permisos para la distribución de nuestro producto, tales como:<br>
-                Comisión reguladora de energía (CRE)<br>
-                Padrón de importadores<br>
-                Certificación PECA (pago electrónico centralizado aduanero) para importación de productos peligrosos
-			</p>
-		</div>
+		
+		
+		<aside class="grid col-one-quarter mq2-col-one-third mq3-col-full">
+
+			<p class="mbottom"><h5>MÉXICO</h5><br>
+Mariano Escobedo 510<br>
+			  Col. Anzures, México, D.F. <br>C.P. 11590<br>
+			  +52 (55) 47 37 10 57</p>
+              </br>
+
+			  
+			<p class="mbottom"><h5>MONTERREY</h5>
+<br>
+				
+Ricardo Margáin 335 Piso 4</br>
+                Valle del Campestre<br>
+			 San Pedro Garza Garcia N.L. 66265</br>
+			  +52 (81) 80 00 56 56</p>
+              </br>
+
+			  <p>info@biofuel.mx</p>
+
+			    
 			
-	
-		 <div class="slider grid col-one-half mq2-col-full">
-		   <div class="flexslider">
-		     <div class="slides">
-		       <div class="slide">
-		           	<figure>
-		                 <img src="img/img.jpg" alt="">
-		                 <figcaption>
-		                 	<div>
-		                 	<h5>Oficinas en:</h5>
-		                 	<p>México Distrito Federal</p>
-		                 </figcaption>
-		             	</figure>
-		           </div>
-		           
-		           <div class="slide">
-		               	<figure>
-		                     <img src="img/img2.jpg" alt="">
-		                     <figcaption>
-		                     	<div>
-		                     	<h5>Oficinas en:</h5>
-		                     	<p>Monterrey Nuevo León </p>
-		                     	</div>
-		                     </figcaption>
-		                 	</figure>
-		               </div>
-		            </div>
-		   </div>
-		 </div>
+			
 		
-		 </section>
-	
+		</aside>
+		
+		<section class="grid col-three-quarters mq2-col-two-thirds mq3-col-full">
+			<h1>Deja tu mensaje</h1>
+			
+			
+			<form id="contact_form" class="contact_form" action="contact.php" method="post" name="contact_form">	
+				<ul>
+					<li>
+						<label for="name">Nombre </label>
+						<input type="text" name="name" id="name" required class="required" >
+					</li>
+					<li>
+						<label for="email">E-mail:</label>
+						<input type="email" name="email" id="email" required placeholder="ejemplo@gmail.com" class="required email">
+					</li>
+					<li>
+						<label for="email">Asunto:</label>
+						<input type="text" name="phone" id="phone" required placeholder="asunto" class="required">
+					</li>
 
+                    <li>
+						<label for="phone">Telefono</label>
+						<input type="number" name="phone" id="phone" required class="required" >
+					</li>
 
-
-
+					<li>
+						<label for="message">Mensaje:</label>
+						<textarea name="message" id="message" cols="100" rows="6" required  class="required" ></textarea>
+					</li>
+					<li>
+						<button type="submit" id="submit" name="submit" class="button fright">Enviar</button>
+					</li>	
+				</ul>			
+			</form>
+		</section>	
+		
 	</div> <!--main-->
 
 <div class="divide-top">
-	<footer class="grid-wrap">
-		<ul class="grid col-one-third social">
-			<li><a href="#"></a></li>
-			<li><a href="#"></a></li>
-			<li><a href="#"></a></li>
-			<li><a href="#">+</a></li>
-			<li><a href="#"></a></li>
-		</ul>
+<footer class="grid-wrap">
+	<ul class="grid col-one-third social">
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#">+</a></li>
+		<li><a href="#"></a></li>
+	</ul>
+
+	<div class="up grid col-one-third ">
+		<a href="#navtop" title="Go back up">&uarr;</a>
+	</div>
 	
-		<div class="up grid col-one-third ">
-			<a href="#navtop" title="Go back up">&uarr;</a>
-		</div>
-		
-	</footer>
+</footer>
 </div>
 
 </div>
@@ -156,8 +168,8 @@
 <script src="js/selectivizr.js"></script>
 <![endif]-->
 
-<script src="js/jquery.flexslider-min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 
 <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID. -->
 <script>

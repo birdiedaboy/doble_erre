@@ -1,171 +1,86 @@
-<?php 
-if(isset($_POST['submit'])){
-    $to = "ventas@biofuel.mx"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
 
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    }
-?>
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="uft-8">
-	<link rel="stylesheet" type="text/css" href="estilo.css">
-	<title>Doble Erre Continentales</title>
-</head>
-<body>
-	 <!--Bloque Logo --> 
-	<div class="bloque">
-		<img class="centro" src=" img/Logo_RR.png">
-	</div>
-    <h3>Quiénes Somos</h3>
-    <div class="biodiesel">
-            <p class="chiquito">
-                <span class="bio">
-                    Doble Erre Continentales S.A. de C.V., es una empresa mexicana que a raíz de la reforma energética encuentra un área de oportunidad para abastecer combustibles de la más alta calidad y amigables con el medio ambiente como es el BIODIESEL.
-                </span>
-                <br>
-                <hr>
-            <span class="micha">
-                <small>
-                    Las bondades de ambos productos se fusionan para potencializar y optimizar la mezcla final.
-                </small>
-            </span>
-            <span class="micha">
-                <small>
-                    Las mezclas de B6 a B20, son calificadas las óptimas para elevar el rendimiento y maximizar la vida del motor.
-                </small>
-            </span>
-            <hr>
-               
-        
-                <span class="bio2">
-                    Nuestros combustibles son amigables con el medio ambiente, virtualmente libre de azufre, además de su contenido parcialmente renovable. Cumpliendo con las especificaciones de calidad que dicta la ASTM.
-                </span>
-            </p>
-        </div>
-    <!--Bloque informacion -->  
-	<div class="bloque02">
+<html lang="en">
+  <head>
+  <meta name="google-site-verification" content="nchuSEiCsh50_ckPlya9EILBs78ksVzD7ChAGRFSb2w" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-		<h3>Quiénes Somos</h3>
+    <title>Doble Erre Continentales</title>
 
-		<p class="nuevo">
-          <img class="redondo" src="img/circulo.png">
-            <br>
-                <b>
-                    Biodiesel de Soya
-                </b>
-            <br>
-            <br>
-			Un combustible de origen vegetal, compuesto de esteres monoalquílicos de ácidos grasos de cadena larga.
-		</p>
-		<p class="nuevo">
-            <img class="redondo" src="img/circulo.png">
-            <br>
-                <b>
-                    Diesel Ultra Bajo en Azufre
-                </b>
-            <br>
-            <br>
-                Combustible petrolífero más limpio que el diésel común, por bajo contenido de azufre (máx. 15 ppm).
-            <br>
-            <small>
-                97% menor contenido de azufre que el Diésel PEMEX (500 ppm)</small><br>
-            <small>
-            Reducción de e1misión de SOx </small>
-		</p>
-    </div>
-        <div class="biodiesel">
-            <img src="img/img.png">
-            <p class="chiquito">
-                <b>
-                    Nuestra Mezcla de Biodiesel
-                </b>
-                <br>
-                <br>
-                <span class="bio">
-                    Es una mezcla de diésel ultra bajo en azufre y biodiésel de soya, ambos de origen Estadounidense. Contamos con mezclas en diferentes proporciones de contenido de biodiesel, a partir del B10 al B33.
-                </span>
-                <br>
-                <hr>
-            <span class="micha">
-                <small>
-                    Las bondades de ambos productos se fusionan para potencializar y optimizar la mezcla final.
-                </small>
-            </span>
-            <span class="micha">
-                <small>
-                    Las mezclas de B6 a B20, son calificadas las óptimas para elevar el rendimiento y maximizar la vida del motor.
-                </small>
-            </span>
-            <hr>
-               
-        
-                <span class="bio2">
-                    Nuestros combustibles son amigables con el medio ambiente, virtualmente libre de azufre, además de su contenido parcialmente renovable. Cumpliendo con las especificaciones de calidad que dicta la ASTM.
-                </span>
-            </p>
-        </div>
-		
-    
-<!--Bloque forma email --> 
-	<div class="bloque03">
-				<h2>ESCRIBENOS</h2>
-			
-		<form action="" method="post">
-			<div class="veinte" >
-				<input type="text" name="first_name" placeholder="Nombre"></input>
-				<input type="number" name="telefono" placeholder="Telefono"></input>
-			</div>
-			<div class="cincuenta">
-				<input type="email" name="email" placeholder="Email"></input>
-				<input type="text" name="asunto" placeholder="Asunto"></input>
-				
-			</div>
-            <div class="mensaje">
-                <textarea name="message" placeholder="Mensaje"></textarea>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+             <!-- <h3 class="masthead-brand">Doble Erre Continentales</h3> -->
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <!-- <li><a href="#">Features</a></li> -->
+                  <!--<li><a href="#">Contact</a></li>-->
+                </ul>
+              </nav>
             </div>
-			<br>
-			<div>
-				<input type="submit" value="Enviar" name="submit"class="btn-enviar"></input>
-			</div>
-		</form>
-		
-	</div>
-<div class="bloque04">
-    <p class="loc">
-        Edificio Equus Piso 4
-        <br>
-        Ricardo Margain 335
-        <br>
-        Col. Valle del Campestre
-        <br>S
-        an Pedro Garza Garcia
-        <br>
-        CP 66265 NL, Mexico
-    </p>
-    <div class="loc2">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.3987743563575!2d-100.35485778425698!3d25.658072483683863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bde31d170ceb%3A0x8e07cb99a08b1f2c!2sRicardo+Margain+Zozaya+335%2C+Santa+Engracia%2C+66267+San+Pedro+Garza+Garc%C3%ADa%2C+N.L.!5e0!3m2!1sen!2smx!4v1459200724984" width="100px" height="80px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+
+          <div class="inner cover">
+           <!-- <h1 class="cover-heading">Cover your page.</h1> -->
+            <p class="lead"><img src="img/Logo_RR_black.png" class="img-responsive" /> Page under construction.</p>
+            <p class="lead">
+              <!--<a href="#" class="btn btn-lg btn-default">Learn more</a> -->
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Edificio Equus Piso 4 Ricardo Margáin 335 Col.Valle del Campestre CP 66265, San Pedro Garza García, NL. México.  +528183430566 </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
-</div>
-<footer class="bloque05">
-    <p>
-    Clientes
-    </p>
-    <img src="img/circulo.png">
-
-</footer>
-</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>

@@ -7,19 +7,38 @@ p{
 	width: 100%;
 	height: 100%;
     box-sizing: border-box;
+<<<<<<< HEAD
     background-color: black;
     padding: 5% 0 5% 0;    
     display: flex;
     justify-content: center;
+=======
+    background-color: rgb(10,10,10);
+    padding: 10% 10% 10% 10%;
+}
+
+.centro{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+>>>>>>> master
     
 }
 
 
 img.centro{
 	border-radius: 20px;
+<<<<<<< HEAD
 	height: 15vw;
     display: flex;
 	
+=======
+	width: auto;
+	height: 20vw;
+	margin-bottom: %;
+	/*border: solid 1px white;*/
+
+>>>>>>> master
 }
 
 body{
@@ -37,12 +56,21 @@ h1{
     font-family: helvetica, sans-serif;
 }
 h3{
+<<<<<<< HEAD
 	font-size: 4vw;
+=======
+	font-size: 5vw;
+>>>>>>> master
 	color: white;
     text-align: center;
     box-sizing: border-box;
+<<<<<<< HEAD
     margin: 0 0 0% 0;
     padding: 2% 0% 2% 0;
+=======
+    margin: 0 0 10% 0;
+    padding: 2% 4% 2% 0;
+>>>>>>> master
     font-family: 'helvetica', sans-serif;
     background-color: rgba(34,137,197, 1.0);
     
@@ -61,40 +89,44 @@ h2{
 	height: 100%;
     box-sizing: border-box;
     padding: 0% 0% 0% 0%;
+<<<<<<< HEAD
     margin: 0% 0% 0% 0%;
     background-color: rgba(114, 115, 117, 0.4);
+=======
+    background-color: rgba(236,191,68,1.0);
+>>>>>>> master
     padding-bottom: 5vw;
     
     
 }
 
 .nuevo{
-    width: 33vw;
+    width: 25vw;
 	color: black;
     box-sizing: border-box;
-    margin: 0 0vw 0 11vw;
+    margin: 0 0vw 0 16vw;
     display: inline-table;
-    font-size: 3vw;
     text-align: center;
     
 }
 .redondo{
-    width: 30vw;
+    width: 20vw;
     box-sizing: border-box;
     padding: 0 0 0 0;
     margin: 0 0 6vw 0;  
 }
 p.nuevo{
-    font-size: 2.8vw;
+    font-size: 2vw;
     
 }
 p.nuevo b{
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: center;
 }
 p.nuevo small{
-    font-size: 1.7vw;
-    text-align: left;
+    font-size: 1.4vw;
+    text-align: right;
+    
 }
 
 .biodiesel{
@@ -244,9 +276,7 @@ form{
     display: inline-block;
     vertical-align: middle;
     border: solid 1px red;
-    box-sizing: border-box;
     margin: 0 0 0 6%;
-    padding: 0 0 0% 0%;
 }
 
 .bloque05 {
